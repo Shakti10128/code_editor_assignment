@@ -1,0 +1,596 @@
+[
+  {
+    "id": "two-sum",
+    "title": "1. Two Sum",
+    "difficulty": "Easy",
+    "problemStatement": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+    "constraints": "<li>2 <= nums.length <= 10^4</li><li>-10^9 <= nums[i] <= 10^9</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "nums = [2,7,11,15], target = 9",
+        "outputText": "[0,1]",
+        "explanation": "nums[0] + nums[1] == 2 + 7 == 9"
+      },
+      {
+        "id": 1,
+        "inputText": "nums = [3,2,4], target = 6",
+        "outputText": "[1,2]",
+        "explanation": "nums[1] + nums[2] == 2 + 4 == 6"
+      }
+    ],
+    "starterCode": {
+      "cpp": "vector<int> twoSum(vector<int>& nums, int target) {\n    // Write your code here\n}",
+      "java": "public int[] twoSum(int[] nums, int target) {\n    // Write your code here\n}",
+      "python": "def twoSum(nums: List[int], target: int) -> List[int]:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "nums = [2,7,11,15], target = 9", "expectedOutput": "[0,1]"},
+      {"input": "nums = [3,2,4], target = 6", "expectedOutput": "[1,2]"},
+      {"input": "nums = [3,3], target = 6", "expectedOutput": "[0,1]"}
+    ],
+    "status": "unsolved",
+    "category": "Array"
+  },
+  {
+    "id": "reverse-linked-list",
+    "title": "2. Reverse Linked List",
+    "difficulty": "Hard",
+    "problemStatement": "Given the head of a singly linked list, reverse the list, and return the reversed list.",
+    "constraints": "<li>The number of nodes in the list is the range <code>[0, 5000]</code>.</li><li><code>-5000 <= Node.val <= 5000</code></li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "head = [1,2,3,4,5]",
+        "outputText": "[5,4,3,2,1]",
+        "explanation": "Reversing the list results in the order [5,4,3,2,1]."
+      },
+      {
+        "id": 1,
+        "inputText": "head = [1,2,3]",
+        "outputText": "[3,2,1]",
+        "explanation": "Reversing the list results in the order [3,2,1]."
+      }
+    ],
+    "starterCode": {
+      "cpp": "ListNode* reverseList(ListNode* head) {\n    // Write your code here\n}",
+      "java": "public ListNode reverseList(ListNode head) {\n    // Write your code here\n}",
+      "python": "def reverseList(head: ListNode) -> ListNode:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "head = [1,2,3,4,5]", "expectedOutput": "[5,4,3,2,1]"},
+      {"input": "head = [1,2,3]", "expectedOutput": "[3,2,1]"},
+      {"input": "head = [1]", "expectedOutput": "[1]"}
+    ],
+    "status": "unsolved",
+    "category": "Linked List"
+  },
+  {
+    "id": "palindrome-number",
+    "title": "3. Palindrome Number",
+    "difficulty": "Easy",
+    "problemStatement": "Given an integer x, return true if x is a palindrome and false otherwise.",
+    "constraints": "<li>-2^31 <= x <= 2^31 - 1</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "x = 121",
+        "outputText": "true",
+        "explanation": "121 is a palindrome."
+      },
+      {
+        "id": 1,
+        "inputText": "x = -121",
+        "outputText": "false",
+        "explanation": "-121 is not a palindrome."
+      }
+    ],
+    "starterCode": {
+      "cpp": "bool isPalindrome(int x) {\n    // Write your code here\n}",
+      "java": "public boolean isPalindrome(int x) {\n    // Write your code here\n}",
+      "python": "def isPalindrome(x: int) -> bool:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "x = 121", "expectedOutput": "true"},
+      {"input": "x = -121", "expectedOutput": "false"},
+      {"input": "x = 10", "expectedOutput": "false"}
+    ],
+    "status": "unsolved",
+    "category": "Math"
+  },
+  {
+    "id": "merge-two-sorted-lists",
+    "title": "4. Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "problemStatement": "Merge two sorted linked lists and return it as a new sorted list.",
+    "constraints": "<li>The number of nodes in both lists is in the range <code>[0, 5000]</code>.</li><li>-10^4 <= Node.val <= 10^4</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "l1 = [1,2,4], l2 = [1,3,4]",
+        "outputText": "[1,1,2,3,4,4]",
+        "explanation": "Merging the two lists results in the sorted list [1,1,2,3,4,4]."
+      },
+      {
+        "id": 1,
+        "inputText": "l1 = [], l2 = [0]",
+        "outputText": "[0]",
+        "explanation": "Merging the two lists results in [0]."
+      }
+    ],
+    "starterCode": {
+      "cpp": "ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {\n    // Write your code here\n}",
+      "java": "public ListNode mergeTwoLists(ListNode l1, ListNode l2) {\n    // Write your code here\n}",
+      "python": "def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "l1 = [1,2,4], l2 = [1,3,4]", "expectedOutput": "[1,1,2,3,4,4]"},
+      {"input": "l1 = [], l2 = [0]", "expectedOutput": "[0]"},
+      {"input": "l1 = [1,5], l2 = [2,3]", "expectedOutput": "[1,2,3,5]"}
+    ],
+    "status": "unsolved",
+    "category": "Linked List"
+  },
+  {
+    "id": "longest-substring-without-repeating-characters",
+    "title": "5. Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "problemStatement": "Given a string s, find the length of the longest substring without repeating characters.",
+    "constraints": "<li>0 <= s.length <= 5 * 10^4</li><li>s consists of English letters, digits, symbols, and spaces.</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "s = 'abcabcbb'",
+        "outputText": "3",
+        "explanation": "The longest substring without repeating characters is 'abc', which has a length of 3."
+      },
+      {
+        "id": 1,
+        "inputText": "s = 'bbbbb'",
+        "outputText": "1",
+        "explanation": "The longest substring without repeating characters is 'b', which has a length of 1."
+      }
+    ],
+    "starterCode": {
+      "cpp": "int lengthOfLongestSubstring(string s) {\n    // Write your code here\n}",
+      "java": "public int lengthOfLongestSubstring(String s) {\n    // Write your code here\n}",
+      "python": "def lengthOfLongestSubstring(s: str) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "s = 'abcabcbb'", "expectedOutput": "3"},
+      {"input": "s = 'bbbbb'", "expectedOutput": "1"},
+      {"input": "s = 'pwwkew'", "expectedOutput": "3"}
+    ],
+    "status": "unsolved",
+    "category": "String"
+  },
+  {
+    "id": "valid-parentheses",
+    "title": "6. Valid Parentheses",
+    "difficulty": "Easy",
+    "problemStatement": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+    "constraints": "<li>1 <= s.length <= 10^4</li><li>s consists of parentheses only '()[]{}'.</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "s = '()'",
+        "outputText": "true",
+        "explanation": "'()' is a valid parentheses string."
+      },
+      {
+        "id": 1,
+        "inputText": "s = '()[]{}'",
+        "outputText": "true",
+        "explanation": "'()[]{}' is a valid parentheses string."
+      }
+    ],
+    "starterCode": {
+      "cpp": "bool isValid(string s) {\n    // Write your code here\n}",
+      "java": "public boolean isValid(String s) {\n    // Write your code here\n}",
+      "python": "def isValid(s: str) -> bool:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "s = '()'", "expectedOutput": "true"},
+      {"input": "s = '()[]{}'", "expectedOutput": "true"},
+      {"input": "s = '([)]'", "expectedOutput": "false"}
+    ],
+    "status": "unsolved",
+    "category": "String"
+  },
+  {
+    "id": "binary-search",
+    "title": "7. Binary Search",
+    "difficulty": "Easy",
+    "problemStatement": "Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.",
+    "constraints": "<li>1 <= nums.length <= 10^4</li><li>-10^4 < nums[i], target < 10^4</li><li>All the integers in nums are unique.</li><li>nums is sorted in ascending order.</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "nums = [-1,0,3,5,9,12], target = 9",
+        "outputText": "4",
+        "explanation": "9 exists in nums and its index is 4"
+      },
+      {
+        "id": 1,
+        "inputText": "nums = [-1,0,3,5,9,12], target = 2",
+        "outputText": "-1",
+        "explanation": "2 does not exist in nums so return -1"
+      }
+    ],
+    "starterCode": {
+      "cpp": "int search(vector<int>& nums, int target) {\n    // Write your code here\n}",
+      "java": "public int search(int[] nums, int target) {\n    // Write your code here\n}",
+      "python": "def search(nums: List[int], target: int) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "nums = [-1,0,3,5,9,12], target = 9", "expectedOutput": "4"},
+      {"input": "nums = [-1,0,3,5,9,12], target = 2", "expectedOutput": "-1"},
+      {"input": "nums = [5], target = 5", "expectedOutput": "0"}
+    ],
+    "status": "unsolved",
+    "category": "Binary Search"
+  },
+  {
+    "id": "max-depth-binary-tree",
+    "title": "8. Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "problemStatement": "Given the root of a binary tree, return its maximum depth.",
+    "constraints": "<li>The number of nodes in the tree is in the range [0, 10^4].</li><li>-100 <= Node.val <= 100</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "root = [3,9,20,null,null,15,7]",
+        "outputText": "3",
+        "explanation": "The tree has 3 levels"
+      },
+      {
+        "id": 1,
+        "inputText": "root = [1,null,2]",
+        "outputText": "2",
+        "explanation": "The tree has 2 levels"
+      }
+    ],
+    "starterCode": {
+      "cpp": "int maxDepth(TreeNode* root) {\n    // Write your code here\n}",
+      "java": "public int maxDepth(TreeNode root) {\n    // Write your code here\n}",
+      "python": "def maxDepth(root: TreeNode) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "root = [3,9,20,null,null,15,7]", "expectedOutput": "3"},
+      {"input": "root = [1,null,2]", "expectedOutput": "2"},
+      {"input": "root = []", "expectedOutput": "0"}
+    ],
+    "status": "unsolved",
+    "category": "Binary Tree"
+  },
+  {
+    "id": "fibonacci-number",
+    "title": "9. Fibonacci Number",
+    "difficulty": "Easy",
+    "problemStatement": "The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.",
+    "constraints": "<li>0 <= n <= 30</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "n = 2",
+        "outputText": "1",
+        "explanation": "F(2) = F(1) + F(0) = 1 + 0 = 1"
+      },
+      {
+        "id": 1,
+        "inputText": "n = 3",
+        "outputText": "2",
+        "explanation": "F(3) = F(2) + F(1) = 1 + 1 = 2"
+      }
+    ],
+    "starterCode": {
+      "cpp": "int fib(int n) {\n    // Write your code here\n}",
+      "java": "public int fib(int n) {\n    // Write your code here\n}",
+      "python": "def fib(n: int) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "n = 2", "expectedOutput": "1"},
+      {"input": "n = 3", "expectedOutput": "2"},
+      {"input": "n = 4", "expectedOutput": "3"}
+    ],
+    "status": "unsolved",
+    "category": "Dynamic Programming"
+  },
+  {
+    "id": "climbing-stairs",
+    "title": "10. Climbing Stairs",
+    "difficulty": "Easy",
+    "problemStatement": "You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "constraints": "<li>1 <= n <= 45</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "n = 2",
+        "outputText": "2",
+        "explanation": "There are two ways to climb to the top: 1. 1 step + 1 step 2. 2 steps"
+      },
+      {
+        "id": 1,
+        "inputText": "n = 3",
+        "outputText": "3",
+        "explanation": "There are three ways to climb to the top: 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step"
+      }
+    ],
+    "starterCode": {
+      "cpp": "int climbStairs(int n) {\n    // Write your code here\n}",
+      "java": "public int climbStairs(int n) {\n    // Write your code here\n}",
+      "python": "def climbStairs(n: int) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "n = 2", "expectedOutput": "2"},
+      {"input": "n = 3", "expectedOutput": "3"},
+      {"input": "n = 4", "expectedOutput": "5"}
+    ],
+    "status": "unsolved",
+    "category": "Dynamic Programming"
+  },
+  {
+    "id": "best-time-to-buy-and-sell-stock",
+    "title": "11. Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "problemStatement": "You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.",
+    "constraints": "<li>1 <= prices.length <= 10^5</li><li>0 <= prices[i] <= 10^4</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "prices = [7,1,5,3,6,4]",
+        "outputText": "5",
+        "explanation": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5."
+      },
+      {
+        "id": 1,
+        "inputText": "prices = [7,6,4,3,1]",
+        "outputText": "0",
+        "explanation": "In this case, no transactions are done and the max profit = 0."
+      }
+    ],
+    "starterCode": {
+      "cpp": "int maxProfit(vector<int>& prices) {\n    // Write your code here\n}",
+      "java": "public int maxProfit(int[] prices) {\n    // Write your code here\n}",
+      "python": "def maxProfit(prices: List[int]) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "prices = [7,1,5,3,6,4]", "expectedOutput": "5"},
+      {"input": "prices = [7,6,4,3,1]", "expectedOutput": "0"},
+      {"input": "prices = [1,2]", "expectedOutput": "1"}
+    ],
+    "status": "unsolved",
+    "category": "Array"
+  },
+  {
+    "id": "single-number",
+    "title": "12. Single Number",
+    "difficulty": "Easy",
+    "problemStatement": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.",
+    "constraints": "<li>1 <= nums.length <= 3 * 10^4</li><li>-3 * 10^4 <= nums[i] <= 3 * 10^4</li><li>Each element in the array appears twice except for one element which appears only once.</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "nums = [2,2,1]",
+        "outputText": "1",
+        "explanation": "Only 1 appears once."
+      },
+      {
+        "id": 1,
+        "inputText": "nums = [4,1,2,1,2]",
+        "outputText": "4",
+        "explanation": "Only 4 appears once."
+      }
+    ],
+    "starterCode": {
+      "cpp": "int singleNumber(vector<int>& nums) {\n    // Write your code here\n}",
+      "java": "public int singleNumber(int[] nums) {\n    // Write your code here\n}",
+      "python": "def singleNumber(nums: List[int]) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "nums = [2,2,1]", "expectedOutput": "1"},
+      {"input": "nums = [4,1,2,1,2]", "expectedOutput": "4"},
+      {"input": "nums = [1]", "expectedOutput": "1"}
+    ],
+    "status": "unsolved",
+    "category": "Bit Manipulation"
+  },
+  {
+    "id": "linked-list-cycle",
+    "title": "13. Linked List Cycle",
+    "difficulty": "Easy",
+    "problemStatement": "Given head, the head of a linked list, determine if the linked list has a cycle in it.",
+    "constraints": "<li>The number of the nodes in the list is in the range [0, 10^4].</li><li>-10^5 <= Node.val <= 10^5</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "head = [3,2,0,-4], pos = 1",
+        "outputText": "true",
+        "explanation": "There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed)."
+      },
+      {
+        "id": 1,
+        "inputText": "head = [1,2], pos = 0",
+        "outputText": "true",
+        "explanation": "There is a cycle in the linked list, where the tail connects to the 0th node."
+      }
+    ],
+    "starterCode": {
+      "cpp": "bool hasCycle(ListNode *head) {\n    // Write your code here\n}",
+      "java": "public boolean hasCycle(ListNode head) {\n    // Write your code here\n}",
+      "python": "def hasCycle(head: ListNode) -> bool:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "head = [3,2,0,-4], pos = 1", "expectedOutput": "true"},
+      {"input": "head = [1,2], pos = 0", "expectedOutput": "true"},
+      {"input": "head = [1], pos = -1", "expectedOutput": "false"}
+    ],
+    "status": "unsolved",
+    "category": "Linked List"
+  },
+  {
+    "id": "reverse-integer",
+    "title": "14. Reverse Integer",
+    "difficulty": "Medium",
+    "problemStatement": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.",
+    "constraints": "<li>-2^31 <= x <= 2^31 - 1</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "x = 123",
+        "outputText": "321",
+        "explanation": "Digits are reversed."
+      },
+      {
+        "id": 1,
+        "inputText": "x = -123",
+        "outputText": "-321",
+        "explanation": "Digits are reversed with sign preserved."
+      }
+    ],
+    "starterCode": {
+      "cpp": "int reverse(int x) {\n    // Write your code here\n}",
+      "java": "public int reverse(int x) {\n    // Write your code here\n}",
+      "python": "def reverse(x: int) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "x = 123", "expectedOutput": "321"},
+      {"input": "x = -123", "expectedOutput": "-321"},
+      {"input": "x = 120", "expectedOutput": "21"}
+    ],
+    "status": "unsolved",
+    "category": "Math"
+  },
+  {
+    "id": "container-with-most-water",
+    "title": "15. Container With Most Water",
+    "difficulty": "Medium",
+    "problemStatement": "Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.",
+    "constraints": "<li>n == height.length</li><li>2 <= n <= 10^5</li><li>0 <= height[i] <= 10^4</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "height = [1,8,6,2,5,4,8,3,7]",
+        "outputText": "49",
+        "explanation": "The max area is between indices 1 and 8 (height[1]=8 and height[8]=7)"
+      },
+      {
+        "id": 1,
+        "inputText": "height = [1,1]",
+        "outputText": "1",
+        "explanation": "The max area is between indices 0 and 1"
+      }
+    ],
+    "starterCode": {
+      "cpp": "int maxArea(vector<int>& height) {\n    // Write your code here\n}",
+      "java": "public int maxArea(int[] height) {\n    // Write your code here\n}",
+      "python": "def maxArea(height: List[int]) -> int:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "height = [1,8,6,2,5,4,8,3,7]", "expectedOutput": "49"},
+      {"input": "height = [1,1]", "expectedOutput": "1"},
+      {"input": "height = [4,3,2,1,4]", "expectedOutput": "16"}
+    ],
+    "status": "unsolved",
+    "category": "Array"
+  },
+  {
+    "id": "3sum",
+    "title": "16. 3Sum",
+    "difficulty": "Medium",
+    "problemStatement": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j != k and nums[i] + nums[j] + nums[k] == 0.",
+    "constraints": "<li>0 <= nums.length <= 3000</li><li>-10^5 <= nums[i] <= 10^5</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "nums = [-1,0,1,2,-1,-4]",
+        "outputText": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "These triplets sum to zero."
+      },
+      {
+        "id": 1,
+        "inputText": "nums = []",
+        "outputText": "[]",
+        "explanation": "No possible triplets."
+      }
+    ],
+    "starterCode": {
+      "cpp": "vector<vector<int>> threeSum(vector<int>& nums) {\n    // Write your code here\n}",
+      "java": "public List<List<Integer>> threeSum(int[] nums) {\n    // Write your code here\n}",
+      "python": "def threeSum(nums: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "nums = [-1,0,1,2,-1,-4]", "expectedOutput": "[[-1,-1,2],[-1,0,1]]"},
+      {"input": "nums = []", "expectedOutput": "[]"},
+      {"input": "nums = [0]", "expectedOutput": "[]"}
+    ],
+    "status": "unsolved",
+    "category": "Array"
+  },
+  {
+    "id": "letter-combinations-of-a-phone-number",
+    "title": "17. Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "problemStatement": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.",
+    "constraints": "<li>0 <= digits.length <= 4</li><li>digits[i] is a digit in the range ['2', '9'].</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "digits = '23'",
+        "outputText": "['ad','ae','af','bd','be','bf','cd','ce','cf']",
+        "explanation": "These are the possible letter combinations for digits 2 and 3."
+      },
+      {
+        "id": 1,
+        "inputText": "digits = ''",
+        "outputText": "[]",
+        "explanation": "No digits means no combinations."
+      }
+    ],
+    "starterCode": {
+      "cpp": "vector<string> letterCombinations(string digits) {\n    // Write your code here\n}",
+      "java": "public List<String> letterCombinations(String digits) {\n    // Write your code here\n}",
+      "python": "def letterCombinations(digits: str) -> List[str]:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "digits = '23'", "expectedOutput": "['ad','ae','af','bd','be','bf','cd','ce','cf']"},
+      {"input": "digits = ''", "expectedOutput": "[]"},
+      {"input": "digits = '2'", "expectedOutput": "['a','b','c']"}
+    ],
+    "status": "unsolved",
+    "category": "Backtracking"
+  },
+  {
+    "id": "remove-nth-node-from-end-of-list",
+    "title": "18. Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "problemStatement": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+    "constraints": "<li>The number of nodes in the list is sz.</li><li>1 <= sz <= 30</li><li>0 <= Node.val <= 100</li><li>1 <= n <= sz</li>",
+    "examples": [
+      {
+        "id": 0,
+        "inputText": "head = [1,2,3,4,5], n = 2",
+        "outputText": "[1,2,3,5]",
+        "explanation": "The 2nd node from the end is removed."
+      },
+      {
+        "id": 1,
+        "inputText": "head = [1], n = 1",
+        "outputText": "[]",
+        "explanation": "The only node is removed."
+      }
+    ],
+    "starterCode": {
+      "cpp": "ListNode* removeNthFromEnd(ListNode* head, int n) {\n    // Write your code here\n}",
+      "java": "public ListNode removeNthFromEnd(ListNode head, int n) {\n    // Write your code here\n}",
+      "python": "def removeNthFromEnd(head: ListNode, n: int) -> ListNode:\n    # Write your code here\n    pass"
+    },
+    "testCases": [
+      {"input": "head = [1,2,3,4,5], n = 2", "expectedOutput": "[1,2,3,5]"},
+      {"input": "head = [1], n = 1", "expectedOutput": "[]"},
+      {"input": "head = [1,2], n = 1", "expectedOutput": "[1]"}
+    ],
+    "status": "unsolved",
+    "category": "Linked List"
+  }
+]
