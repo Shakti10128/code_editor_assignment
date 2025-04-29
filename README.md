@@ -60,19 +60,6 @@ Start the server
 - [Live Link](https://code-editor-assignment.vercel.app/)
 
 
-## Author
-
-- [@ShaktiKumar](https://github.com/Shakti10128)
-
-
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run deploy
-```
-
 
 ## Screenshots
 ![Screenshot (367)](https://github.com/user-attachments/assets/d44125dd-c088-4c6d-9c0c-3108d35a6142)
@@ -80,3 +67,8 @@ To deploy this project run
 ![Screenshot (369)](https://github.com/user-attachments/assets/229b4994-e730-4e20-96cb-66f1272bb221)
 ![Screenshot (370)](https://github.com/user-attachments/assets/46931f75-fe65-401e-8d9c-8b24ac12463f)
 ![Screenshot (371)](https://github.com/user-attachments/assets/06f17423-775a-49ee-9925-1ab59770507f)
+
+
+## Author
+
+- [@ShaktiKumar](https://github.com/Shakti10128)
