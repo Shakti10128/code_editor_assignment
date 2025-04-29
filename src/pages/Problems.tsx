@@ -22,6 +22,8 @@ const Problems = () => {
         console.error("Error fetching problems:", error);
         }
     };
+
+    // fetch all the problem when component will mount, or we can add pagination
     useEffect(()=>{
         fetchProblems();
     },[])
@@ -46,6 +48,7 @@ const Problems = () => {
                     <p className="w-1/5">CATEGORY</p>
                     <p className="w-1/5">SOLUTION</p>
                 </div>
+                {/* rendering all the problems */}
                 <div>
                     {
                         allProblems.map((problem)=>{

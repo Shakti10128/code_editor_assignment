@@ -1,14 +1,14 @@
 import { useParams } from "react-router-dom";
 import useCurrentProblem from "../../../hooks/useCurrentProblem"
-
 import { Example } from "./Example";
 import { DifficultyLevelAndRating } from "./DifficultyLevelAndRating";
 
 
-
 const Description = () => {
   const {problemId} = useParams();
-  const currentProblem = useCurrentProblem(problemId!);
+  // Always call the hook, even if problemId is undefined
+  const currentProblem = useCurrentProblem({ problemId: problemId ?? "" });
+
 
   if(!currentProblem) {
     return;

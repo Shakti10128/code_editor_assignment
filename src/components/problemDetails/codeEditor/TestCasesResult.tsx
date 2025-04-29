@@ -20,13 +20,18 @@ type TesecaseType = {
 export const TestCasesResult:FC<TestCasesResultProps> = ({
     currentProblem,isRun,isSubmit,setIsRun,setIsSubmit
 }) => {
+    // it's means user want to see the result after runing the code, or submitting the code
     const [resultType,setResultType] = useState<ResultOptionType>("Testcase");
+    // initailly first test case will show
     const [testcase,setTestcase] = useState<TesecaseType>(currentProblem.testCases[0]);
 
+    // tab switiching between initial test case, Test Result,compilation error
     const resultTabSwitch = (switchType:ResultOptionType)=>{
         setResultType(switchType);
     }
 
+    // when user will run the code make api call and show the Test Result via tab switching
+    // or if there is any error active the compilation error tab
     const testOutTheCode = async()=>{
         // api call to test the the user code
         try {
@@ -40,7 +45,8 @@ export const TestCasesResult:FC<TestCasesResultProps> = ({
             setIsRun(false);
         }
     }
-
+    // when user will sumit the code make api call and show the Test Result via tab switching
+    // or if there is any error active the compilation error tab
     const submitTheUserCode = ()=>{
         // api call to test the the user code
         try {
@@ -68,7 +74,7 @@ export const TestCasesResult:FC<TestCasesResultProps> = ({
   return (
     <div>
         <div className="w-full overflow-auto px-4">
-            {/* testcases */}
+            {/* testcases tabs, like initial testcase, Test Result, Compliation Error */}
             <div className="h-14 top-0 -mt-3 flex gap-4 justify-start items-center">
                 <p className={`${resultType === 'Testcase' && "border-b-2"} cursor-pointer text-sm font-semibold`} onClick={()=>resultTabSwitch("Testcase")}>
                     Testcase

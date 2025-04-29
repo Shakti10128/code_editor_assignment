@@ -12,16 +12,21 @@ import LanguagePreferenceAndSettings from "./LanguagePreferenceAndSettings";
 
 
 
+
 export type languages = "python" | "cpp" | "java";
 
-const CodeEditor = () => {
+const CodeEditor= () => {
+    // if user want to test the code via running on test cases
     const [isRun,setIsRun] = useState<boolean>(false);
+    // if user want to submit the code
     const [isSubmit,setIsSubmit] = useState<boolean>(false);
+    // in which language user is writing the code
     const [selectedLanguage,setSelectedLanguage] = useState<languages>("python");
-    const {problemId} = useParams();
 
-    // my own custom hook
-    const currentProblem = useCurrentProblem(problemId!);
+    // the current problem id
+    const {problemId} = useParams();
+    // Always call the hook, even if problemId is undefined
+    const currentProblem = useCurrentProblem({ problemId: problemId ?? "" });
 
     if(!currentProblem) {
         return;
@@ -36,7 +41,7 @@ const CodeEditor = () => {
 
             <div className="bg-[#282828] h-[78vh] relative">
             <Split
-                className="flex flex-col h-full" // important: flex column + full height
+                className="flex flex-col h-full"
                 direction="vertical"
                 sizes={[70, 30]}
                 minSize={10} // optional: minimum size for each pane

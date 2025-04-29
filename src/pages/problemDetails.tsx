@@ -8,20 +8,21 @@ const ProblemDetails = () => {
   return (
     <div>
       <div className="h-full w-full">
-        {/* Header */}
+        {/* Problem Detail Header containing content like: prev,next question functionality
+        user account info etc....*/}
           <div>
             <ProblemDetailsHeader/>
           </div>
           
-          {/* left & right pannel for code editor */}
+          {/* left & right pane for code editor */}
           <div>
           <Split
               className="split h-[calc(100vh - 56px)] w-full overflow-x-hidden"
               gutterAlign="start"
               sizes={[50, 50]}
           >
-              <ProblemDescription />
-              <CodeEditor />
+              <ProblemDescription/>
+              <CodeEditor/>
           </Split>
 
         </div>

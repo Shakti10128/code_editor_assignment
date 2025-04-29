@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState } from "react";
 import Description from "./Description";
 import Solutions from "./Solutions";
 import Submission from "./Submission";
@@ -6,8 +6,8 @@ import Submission from "./Submission";
 
 
 const problemOptions:string[] = ["Description","Solutions","Submission"];
-
 const ProblemDescription = () => {
+    // selected means, description,submission,solutions etc...
     const [selectedOption,setSelectedOption] = useState<string>(problemOptions[0]);
   return (
     <div>
