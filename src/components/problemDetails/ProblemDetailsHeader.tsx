@@ -60,8 +60,8 @@ const ProblemDetailsHeader = () => {
             {/* user account details */}
             <div className='w-1/3 h-full flex justify-end items-center pr-2 lg:pr-5'>
                 <div className='gap-5 flex justify-center items-center h-full'>
-                    <TfiTimer className='h-8 w-8 font-bold cursor-pointer'/>
-                    <CgProfile className='h-8 w-8 font-bold cursor-pointer'/>
+                    <TfiTimer className='h-6 w-6 font-semibold cursor-pointer'/>
+                    <CgProfile className='h-6 w-6 font-semibold cursor-pointer'/>
                 </div>
             </div>
         </div>
