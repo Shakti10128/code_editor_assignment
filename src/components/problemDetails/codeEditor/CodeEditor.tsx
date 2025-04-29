@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Split from 'react-split'
-import useCurrentProblem from "../../../hooks/useCurrentProblem";
 import { useParams } from "react-router-dom";
 import CodeMirror from '@uiw/react-codemirror';
 import { vscodeDark } from '@uiw/codemirror-themes-all';
@@ -8,6 +7,7 @@ import { getLanguageExtension } from "../../../utils/getLanguageExtension";
 import { CodeRunner } from "./CodeRunner";
 import { TestCasesResult } from "./TestCasesResult";
 import LanguagePreferenceAndSettings from "./LanguagePreferenceAndSettings";
+import useCurrentProblem from "../../../hooks/useCurrentProblem";
 
 
 

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import useCurrentProblem from "../../../hooks/useCurrentProblem"
 import { Example } from "./Example";
 import { DifficultyLevelAndRating } from "./DifficultyLevelAndRating";
+import useCurrentProblem from "../../../hooks/useCurrentProblem";
 
 
 const Description = () => {
